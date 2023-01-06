@@ -18,20 +18,26 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text('Flutter 테스트를 위한 앱임'),
-
-      ),
+        ),
         // body: Container(),
 
-        body:Column(
-          // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          // crossAxisAlignment: CrossAxisAlignment.center,
-          children:[
-            Text('안녕'),
-            Icon(Icons.star),
-            Icon(Icons.star),
-            Icon(Icons.star),
-            Icon(Icons.star),
-        ],
+        // body:Column(
+        //   // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        //   // crossAxisAlignment: CrossAxisAlignment.center,
+        //   children:[
+        //     Text('안녕'),
+        //     Icon(Icons.star),
+        //     Icon(Icons.star),
+        //     Icon(Icons.star),
+        //     Icon(Icons.star),
+        // ],
+        // ),
+        body: Align(
+          alignment: Alignment.topCenter,
+          child: Container(
+           width: double.infinity, height: 50, color: Colors.blue,
+           margin: EdgeInsets.fromLTRB(3, 30, 0, 0),
+          ),
         ),
         bottomNavigationBar: BottomNavigationBar(
           items: const <BottomNavigationBarItem>[
